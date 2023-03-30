@@ -1,0 +1,35 @@
+.nav{
+    display: flex;
+   
+}
+
+.nav__logo{
+    width: 100px;
+    height: auto;
+    position: relative;
+    top:0.5rem
+}
+
+.nav__liste{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
+    column-gap: 2rem;
+    margin-left: 4rem;
+    position: relative;
+    top: 2.5rem;
+}
+
+.nav__item{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav__item-1{
+    color: var(--color-secondary-variant);
+}
+
+.nav__item-2{
+    color: var(--color-primary);
+}

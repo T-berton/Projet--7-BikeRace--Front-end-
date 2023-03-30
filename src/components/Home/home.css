@@ -1,0 +1,77 @@
+.home__container{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.background{
+    min-width:100vw;
+    min-height: 100vh;
+    background-image: url('../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home__grid{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+}
+
+.home__header{
+    position: relative;
+    top: 10rem;
+    max-width: 60vw;
+}
+
+.home__header__title h1 {
+    font-family: 'Russo';
+    font-size: 7rem;
+    line-height: 7rem;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.home__header__title-green{
+    color: var(--color-secondary-variant);
+}
+
+.home__header__title-white{
+    color: var(--color-primary);
+}
+
+.home__header__subtitle{
+    display: flex;
+    column-gap: 7rem;
+}
+
+.home__header__subtitle h2 {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.home__social{
+    border: 2px dotted;
+    border-radius: 1rem 1rem;
+    border-color: var(--color-primary);
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: max-content;
+    height: max-content;
+}
+
+.home__social__icon{
+    font-size: 1.5rem;
+    color: var(--color-secondary-variant);
+}
+
+.home__social__icon:hover{
+    color: var(--color-primary);
+}
