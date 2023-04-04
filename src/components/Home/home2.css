@@ -1,0 +1,32 @@
+.home2__background{
+    background-color: var(--color-primary);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 40vh auto;
+}
+.home2__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    column-gap: 3rem;
+}
+
+.home2__header__title{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.home2__header__description{
+    font-size: 1.25rem;
+}
+
+.home2__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.home2__grid__item{
+    min-width: 100%;
+    max-height: 60vh;
+}

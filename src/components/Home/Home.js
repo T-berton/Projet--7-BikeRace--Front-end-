@@ -4,13 +4,15 @@ import './home.css'
 import { Icon } from '@iconify/react';
 import Home2 from "./Home2";
 import Home3 from "./Home3";
+import Home4 from "./Home4";
+import Contact from "./Contact";
 
 
 function Home() {
     
     return (
         <>
-        <div className="home__container background">
+        <div className="home__container home__background">
            <Nav/>
            <div className="home__grid">
                 <div className="home__header">
@@ -39,6 +41,8 @@ function Home() {
         </div>
         <Home2/>
         <Home3/>
+        <Home4/>
+        <Contact/>
         </>
     )
 }

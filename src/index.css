@@ -5,7 +5,10 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Garet';
+  
 }
+
+
 
 @font-face {
   font-family: 'Garet';
@@ -34,4 +37,25 @@
 
 .container {
   padding: 2rem 3rem;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 2rem 2rem;
+}
+
+.btn__content-primary{
+  color: var(--color-secondary);
+}
+
+.btn-primary{
+
+}
+.btn-secondary{
+
 }
