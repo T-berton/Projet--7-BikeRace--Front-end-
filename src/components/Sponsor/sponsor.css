@@ -1,0 +1,26 @@
+.form__background{
+    min-height: 100vh;
+    background-color: var(--color-primary);
+    padding: 2rem 4rem;
+}
+
+.form__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__firstname,.form__lastname,.form__emailaddress,.form__slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}

@@ -6,6 +6,7 @@ import Home2 from "./Home2";
 import Home3 from "./Home3";
 import Home4 from "./Home4";
 import Contact from "./Contact";
+import Footer from "../Shared/Footer/Footer";
 
 
 function Home() {
@@ -42,7 +43,7 @@ function Home() {
         <Home2/>
         <Home3/>
         <Home4/>
-        <Contact/>
+        <Footer/>
         </>
     )
 }

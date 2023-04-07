@@ -1,0 +1,28 @@
+.rider__container{
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--color-primary);
+}
+
+.rider__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo';
+    color: var(--color-secondary);
+    font-size: 3rem;
+    line-height: 7rem;
+}
+
+.rider__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+}
+
+.rider__card{
+    width: 20rem;
+    height: 8rem;
+    border: 1px solid purple;
+    border-radius: 1rem;
+}

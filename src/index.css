@@ -49,13 +49,22 @@
   border-radius: 2rem 2rem;
 }
 
-.btn__content-primary{
-  color: var(--color-secondary);
-}
 
 .btn-primary{
+  border-color: var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 
 }
 .btn-secondary{
+  background-color: var(--color-secondary);
+  border-color:var(--color-secondary-variant);
+  color: var(--color-secondary-variant);
 
 }
+
+.btn:hover{
+  background-color: var(--color-secondary-variant);
+  color: var(--color-secondary);
+}
+

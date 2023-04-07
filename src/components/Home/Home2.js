@@ -3,6 +3,8 @@ import './home2.css'
 import cyclist1 from '../../assets/Home/cyc1.png'
 import cyclist2 from '../../assets/Home/cyc2.png'
 import cyclist3 from '../../assets/Home/cyc3.png'
+import { Link } from "react-router-dom";
+
 
 function Home2(){
     return (
@@ -11,9 +13,13 @@ function Home2(){
                 <h2 className="home2__header__title">
                     Get Ready for the 2024 Boulder Bike Tour!
                 </h2>
-                <p className="home2__header__description">
-                    The Boulder Bike Tour, a thrilling and esteemed bike race in Colorado's Rocky Mountains, happens every 10 years and is coming up next year!
-                </p>
+                <div className="home2__header__subtitle"> 
+                    <p className="home2__header__description">
+                        The Boulder Bike Tour, a thrilling and esteemed bike race in Colorado's Rocky Mountains, happens every 10 years and is coming up next year!
+                    </p>
+                    <Link to={`/Gallery`} className="btn btn-secondary">DISCOVER THE GALLERY</Link>
+                </div>
+               
             </div>
             <div className="home2__grid">
                 <img src={cyclist1} class="home2__grid__item" alt="Cyclist 1"/>

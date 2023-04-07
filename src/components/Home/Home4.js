@@ -16,8 +16,8 @@ function Home4(){
             </div>
             <div className="">
                 <img src={map} alt="Road of the bike race" className="home4__img"/>
-                <div className="btn btn-primary">
-                    <Link to={`/Location`} className="btn__content-primary">SEE THE RACE IN LIVE !</Link>
+                <div>
+                    <Link to={`/Location`} className="btn btn-secondary">RACE IN LIVE !</Link>
                 </div>
             </div>
         </div>

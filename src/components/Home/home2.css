@@ -18,8 +18,14 @@
     font-weight: bold;
 }
 
+.home2__header__subtitle{
+    display: flex;
+    flex-direction: column;
+}
+
 .home2__header__description{
     font-size: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 .home2__grid{

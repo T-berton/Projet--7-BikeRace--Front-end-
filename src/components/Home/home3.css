@@ -46,4 +46,10 @@
 .home3__card__body{
     font-size: 1rem ;
     color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+.home3__card__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

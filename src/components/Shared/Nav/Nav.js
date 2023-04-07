@@ -1,11 +1,13 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import {Link, useLocation } from "react-router-dom";
 import './nav.css'
 import logo from '../../../assets/logo.png'
 
 function Nav (){
+    const location= useLocation();
+    const currentpath = location.pathname;
     return (
-        <nav className="nav">
+        <nav className={`${currentpath === '/' ? 'nav-home' : 'nav-other'}`}>
             <span className>
                 <img src={logo} class="nav__logo" alt="Logo Boulder Race Colorado"/>
             </span>
