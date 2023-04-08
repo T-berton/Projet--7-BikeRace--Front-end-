@@ -13,7 +13,7 @@ function Footer() {
                 <nav className="footer__nav">           
                     <Link to={`/`} className="footer__nav-link">HOME</Link>
                     <Link to={`/Gallery`} className="footer__nav-link">GALLERY</Link>
-                    <Link to={`/Sponsor`} className="footer__nav-link">SPONSOR</Link>
+                    <Link to={`/Slogan`} className="footer__nav-link">SLOGAN</Link>
                     <Link to={`/Location`} className="footer__nav-link">LOCATION</Link>
                 </nav>
             </div>

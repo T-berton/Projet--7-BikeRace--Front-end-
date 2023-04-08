@@ -1,0 +1,63 @@
+.form__background{
+    min-height: 100vh;
+    background-color: var(--color-primary);
+    padding: 2rem 4rem;
+    width: 100%;
+}
+
+.form__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 10rem;
+
+}
+
+.form__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 2rem;
+}
+
+.form__firstname,.form__lastname,.form__emailaddress,.form__slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form__firstname input,.form__lastname input,.form__emailaddress input,.form__slogan textarea {
+    width: 100%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 0.5rem;
+}
+
+.form__slogan textarea{
+    height: 10rem;
+}
+
+.form__submit{
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-variant);
+}
+
+.form__submit:hover{
+    background-color: var(--color-secondary-variant);
+    color: var(--color-secondary);
+}

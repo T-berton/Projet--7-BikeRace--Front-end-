@@ -20,7 +20,7 @@ function Nav (){
                 </li>    
                 <span></span>
                 <li>
-                    <Link to={`/Sponsor`} className="nav__item nav__item-2">SPONSOR</Link>
+                    <Link to={`/Slogan`} className="nav__item nav__item-2">SLOGAN</Link>
                 </li>    
                 <li>
                     <Link to={`/Location`} className="nav__item nav__item-2">LOCATION</Link>

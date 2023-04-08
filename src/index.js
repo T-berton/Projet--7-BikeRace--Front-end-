@@ -8,8 +8,8 @@ import {
 import Home from "./components/Home/Home";
 import Gallery from './components/Gallery/Gallery';
 import Rider from './components/Rider/Rider';
-import Sponsor from './components/Sponsor/Sponsor';
 import Location from './components/Location/Location';
+import Slogan from './components/Slogan/Slogan';
 
 
 const router = createBrowserRouter([
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
     element: <Rider/>,
   },
   {
-    path: "/Sponsor",
-    element: <Sponsor/>,
+    path: "/Slogan",
+    element: <Slogan/>,
   },
   {
     path:'/Location',

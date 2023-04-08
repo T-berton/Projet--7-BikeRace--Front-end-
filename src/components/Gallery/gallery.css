@@ -1,11 +1,22 @@
 .gallery__container{
     min-height: 100vh;
     background-color: var(--color-primary);
+    padding: 2rem;
+}
+
+.gallery__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem; 
     row-gap: 2rem;
-    padding: 4rem;
+}
+
+.gallery__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
 }
 
 .gallery__card{
