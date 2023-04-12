@@ -1,14 +1,21 @@
 .map__container{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-primary);
 }
 
+.map__container h1 {
+
+    font-size: 3rem;
+}
+
 .map {
     height: 30rem;
-    width: 40rem;
+    width: 70rem;
     border: solid 1px;
     border-radius: 0.5rem;
+    margin-bottom: 4rem;
 }

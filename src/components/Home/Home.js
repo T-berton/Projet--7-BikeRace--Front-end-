@@ -5,11 +5,39 @@ import { Icon } from '@iconify/react';
 import Home2 from "./Home2";
 import Home3 from "./Home3";
 import Home4 from "./Home4";
-import Contact from "./Contact";
 import Footer from "../Shared/Footer/Footer";
+import {useEffect, useState} from 'react'
 
 
 function Home() {
+
+    const [timeLeft, setTimeLeft] = useState({
+        months: 0,
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
+    const [test,setTest]= useState((null));
+
+    function convertMstoDate(time_ms){
+        return(new Date(time_ms).toString('sv'))
+    }
+
+    function computeTimeLeft(){
+        const currentDate_ms = new Date().getTime();
+        const targetDate = new Date("April 1, 2024 12:00:00:000");
+        const targetDate_ms = targetDate.getMilliseconds();
+        const timeLeft_ms = targetDate_ms - currentDate_ms;
+        const timeLeft = convertMstoDate(timeLeft_ms)
+        setTest(timeLeft)
+    }
+
+    useEffect(() => {
+      computeTimeLeft();
+    
+    }, [])
+    
     
     return (
         <>
@@ -21,6 +49,7 @@ function Home() {
                         <h1 className="home__header__title-green">BOULDER</h1><h1 className="home__header__title-white"> BIKE</h1> <h1 className="home__header__title-green">TOUR</h1> 
                     </div>
                     <div className="home__header__subtitle">
+                        
                         <h2 className="home__header__title-white">
                             09.22.25
                         </h2>
