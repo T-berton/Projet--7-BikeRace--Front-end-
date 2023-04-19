@@ -16,8 +16,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    font-family: 'Russo';
     font-size: 3rem;
-}
+    line-height: 7rem;}
 
 .gallery__card{
     width: 20rem;
@@ -37,4 +38,22 @@
 
 .gallery__img.loaded {
     opacity: 1;
+}
+
+@media (max-width:768px) {
+    .gallery__grid{
+        grid-template-columns: 1fr 1fr;
+        }
+    
+}
+
+
+@media (max-width:426px) {
+    .gallery__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+        }
+    
 }

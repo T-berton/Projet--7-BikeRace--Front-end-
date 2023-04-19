@@ -1,0 +1,57 @@
+.social{
+    border: 2px dotted;
+    border-radius: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-2rem, -1rem);
+    background-color: rgba(0, 0, 0, 0.3); /* Ajouter un fond noir semi-transparent */
+}
+
+.social--light a:hover{
+    color: var(--color-primary);
+}
+.social--dark a:hover{
+    color: var(--color-secondary-variant);
+}
+
+.social a {
+    font-size: 1.5rem;
+}
+
+.social--light{
+    z-index: 1;
+    border-color: var(--color-primary);
+}
+.social--light a {
+    color: var(--color-secondary-variant);
+}
+
+.social--dark{
+z-index: 2;
+border: var(--color-secondary);
+opacity: 0.5;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.social--dark:hover{
+    opacity: 1;
+}
+
+.social--dark a {
+    color: var(--color-secondary);
+}
+
+@media (max-width:768px){
+
+    .social{
+        transform: translate(-1rem, -1rem);
+
+    }
+}
+
+

@@ -6,13 +6,11 @@
 }
 
 .rider__title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Russo';
+    text-align: center;
     color: var(--color-secondary);
+    font-family: 'Russo';
     font-size: 3rem;
-    line-height: 7rem;
+    line-height: 3rem;
     margin: 0;
     padding-bottom: 1rem;
 }
@@ -49,4 +47,22 @@
     align-items: center;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+}
+
+@media (max-width:1025px) {
+    .rider__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 3rem 3rem;
+    }
+}
+
+@media (max-width:426px) {
+    .rider__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import Nav from "../Shared/Nav/Nav";
 import './gallery.css'
 import Footer from "../Shared/Footer/Footer";
+import SocialBar from "../Shared/SocialBar/SocialBar";
+
 
 
 function Gallery(){
@@ -93,6 +95,7 @@ function Gallery(){
                   })}
         </div> 
         </div>
+        <SocialBar/>
         <Footer/>    
         </>
         

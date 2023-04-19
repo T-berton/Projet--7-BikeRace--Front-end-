@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "../Shared/Footer/Footer";
 import Nav from "../Shared/Nav/Nav";
 import './location.css'
+import SocialBar from "../Shared/SocialBar/SocialBar";
+
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
@@ -63,6 +65,7 @@ function Location (){
                 }
             </MapContainer>
             </div>
+            <SocialBar/>
             <Footer/>
         </>
     )

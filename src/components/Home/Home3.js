@@ -25,15 +25,13 @@ function Home3(){
                 <div className="home3__card">
                     <div className="home3__card__content">
                         <div className="home3__card__title">
-                            SPONSOR REQUEST
+                            SLOGAN IDEA
                         </div>
                         <div className="home3__card__body">
-                            The official event shirt,
-                            freebies, and other items will
-                            be provided one week before the race.
+                        Rev up your creativity and race towards the prize by entering our slogan contest today!
                         </div>
                         <div className="home3__card__btn">
-                            <Link to={`/Sponsor`} className="btn btn-primary">REQUEST SPONSORSHIP</Link>
+                            <Link to={`/Sponsor`} className="btn btn-primary">CONTEST SLOGAN IDEA</Link>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import Home3 from "./Home3";
 import Home4 from "./Home4";
 import Footer from "../Shared/Footer/Footer";
 import {useEffect, useState} from 'react'
+import SocialBar from "../Shared/SocialBar/SocialBar";
 
 
 function Home() {
@@ -18,57 +19,98 @@ function Home() {
         minutes: 0,
         seconds: 0,
       });
-    const [test,setTest]= useState((null));
 
-    function convertMstoDate(time_ms){
-        return(new Date(time_ms).toString('sv'))
+    function convertMstoTime(time_ms){
+        const seconds = Math.floor((time_ms/1000)%60);
+        const minutes = Math.floor((time_ms/(1000*60))%60);
+        const hours = Math.floor((time_ms/(1000 * 60*60))%24);
+        const days = Math.floor((time_ms/(1000*60*60*24))%30);
+        const months = Math.floor((time_ms/(1000*60*60*24*30))%12);
+        return ({months,days,hours,minutes,seconds})
     }
 
     function computeTimeLeft(){
         const currentDate_ms = new Date().getTime();
         const targetDate = new Date("April 1, 2024 12:00:00:000");
-        const targetDate_ms = targetDate.getMilliseconds();
+        const targetDate_ms = targetDate.getTime();
         const timeLeft_ms = targetDate_ms - currentDate_ms;
-        const timeLeft = convertMstoDate(timeLeft_ms)
-        setTest(timeLeft)
+        const timeLeft = convertMstoTime(timeLeft_ms);
+        console.log('computeTimeLeft:', timeLeft);
+        setTimeLeft(timeLeft)
+
     }
 
     useEffect(() => {
-      computeTimeLeft();
+        const intervalId = setInterval(()=>{
+            computeTimeLeft();
+        },1000);
+        return () => clearInterval(intervalId);
     
     }, [])
     
     
     return (
         <>
-        <div className="home__container home__background">
-           <Nav/>
+        <div className="home__background">
+            <div className="home__container">
+            <Nav/>
            <div className="home__grid">
                 <div className="home__header">
                     <div className="home__header__title">
                         <h1 className="home__header__title-green">BOULDER</h1><h1 className="home__header__title-white"> BIKE</h1> <h1 className="home__header__title-green">TOUR</h1> 
                     </div>
+                    <h2 className="home__header__title-green home__header__counter__title">COMING SOON...</h2>
                     <div className="home__header__subtitle">
-                        
-                        <h2 className="home__header__title-white">
-                            09.22.25
+                        <div className="home__header__date"> 
+                            <h2 className="home__header__title-white">
+                                {timeLeft.months}
+                            </h2>
+                            <p className="home__header__title-green">Mths</p>
+                        </div>
+                        <h2 className="home__header__title-green">:</h2>
+                        <div className="home__header__date"> 
+                            <h2 className="home__header__title-white">
+                                {timeLeft.days}
+                            </h2>
+                            <p className="home__header__title-green">Days</p>
+                        </div>
+                        <h2 className="home__header__title-green">:</h2>
+                        <div className="home__header__date"> 
+                            <h2 className="home__header__title-white">
+                                {timeLeft.hours}
+                            </h2>
+                            <p className="home__header__title-green">Hrs</p>
+                        </div>
+                        <h2 className="home__header__title-green">:</h2>
+                        <div className="home__header__date"> 
+                            <h2 className="home__header__title-white">
+                                {timeLeft.minutes} 
+                            </h2>
+                            <p className="home__header__title-green">Min</p>
+                        </div>
+                        <h2 className="home__header__title-green">:</h2>
+                        <div className="home__header__date"> 
+                            <h2 className="home__header__title-white">
+                                {timeLeft.seconds}
+                            </h2>
+                            <p className="home__header__title-green">Sec</p>
+                        </div>
+                        {/* <h2 className="home__header__title-white">
+                            {`${timeLeft.hours}h${timeLeft.minutes}min${timeLeft.seconds}sec`}
                         </h2>
                         <h2 className="home__header__title-green">
-                            5:OO AM
+                            {`${timeLeft.days}days ${timeLeft.months}months`}
                         </h2>
                         <h2 className="home__header__title-white">
                             Colorado
-                        </h2>
+                        </h2> */}
                     </div>
-                </div>    
-                <div className="home__social">
-                    <a href="https://facebook.com/"> <Icon icon="teenyicons:facebook-solid" className="home__social__icon"/></a>
-                    <a href="https://twitter.com/"> <Icon icon="teenyicons:twitter-solid" className="home__social__icon"/></a>
-                    <a href="https://instagram.com/"> <Icon icon="teenyicons:instagram-solid" className="home__social__icon" /></a>
-                    <a href="https://tiktok.com/"> <Icon icon="teenyicons:tiktok-solid" className="home__social__icon"/></a>
-                </div>  
+                </div>
+            </div>
+               
             </div>
         </div>
+        <SocialBar/>
         <Home2/>
         <Home3/>
         <Home4/>

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "../Shared/Footer/Footer";
 import Nav from "../Shared/Nav/Nav";
 import './rider.css'
+import SocialBar from "../Shared/SocialBar/SocialBar";
+
 
 function Rider (){
 
@@ -52,8 +54,8 @@ function Rider (){
                  
                 </div>
             </div>
-           
         <Footer/>
+        <SocialBar/>
         </>
     )
 }

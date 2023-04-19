@@ -48,3 +48,10 @@
 .footer__copyright {
     font-size: 0.875rem;
 }
+@media (max-width:426px) {
+    .footer__nav{
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}

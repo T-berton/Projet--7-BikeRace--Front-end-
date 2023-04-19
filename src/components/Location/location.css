@@ -9,8 +9,9 @@
 
 .map__container h1 {
 
+    font-family: 'Russo';
     font-size: 3rem;
-}
+    line-height: 7rem;}
 
 .map {
     height: 30rem;
@@ -18,4 +19,25 @@
     border: solid 1px;
     border-radius: 0.5rem;
     margin-bottom: 4rem;
+}
+
+@media (max-width:768px) {
+    .map{
+    height: 20rem;
+    width: 40rem;
+    }
+    
+}
+
+@media (max-width:426px) {
+    .map{
+    width: 25rem;
+    }
+    
+}
+@media (max-width:376px) {
+    .map{
+    width: 20rem;
+    }
+    
 }

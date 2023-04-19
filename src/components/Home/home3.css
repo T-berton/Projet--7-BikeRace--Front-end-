@@ -1,10 +1,10 @@
 .home3__background{
     background-color: var(--color-secondary);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .home3__title {
-    font-size: 50px;
+    font-size: 3.5rem;
     font-weight: bold;
     color: var(--color-secondary-variant);
     display: flex;
@@ -29,10 +29,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
 }
 
 .home3__card__content{
-    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home3__card__title{
@@ -52,4 +57,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:768px) {
+
+    .home3__grid{
+        column-gap: 2rem;
+    }
+    .home3__card{
+        width: 350px;
+        height: 300px;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .home3__card__title{
+        font-size: 2.5rem;
+    }
+    .home3__title{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:426px) {
+    .home3__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .home3__card__title{
+        font-size: 1.5rem;
+    }
+    .home3__title{
+        font-size:2rem;
+    }
+    
+}
+
+@media (max-width:376px) {
+    .home3__card{
+        width: 250px;
+        height: 300px;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }

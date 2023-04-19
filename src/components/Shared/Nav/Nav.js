@@ -2,6 +2,8 @@ import React from "react";
 import {Link, useLocation } from "react-router-dom";
 import './nav.css'
 import logo from '../../../assets/logo.png'
+import { Fade as Hamburger } from 'hamburger-react'
+
 
 function Nav (){
     const location= useLocation();
@@ -11,7 +13,18 @@ function Nav (){
             <span className>
                 <img src={logo} class="nav__logo" alt="Logo Boulder Race Colorado"/>
             </span>
-            <ul className="nav__liste">
+            <div className="nav__mobile">
+                <Hamburger label="Show menu" rounded duration={0.8} color="#C1FF72" onToggle={toggled =>{
+                    const navListe = document.querySelector(".nav__liste");
+                    if (toggled) {
+                        navListe.setAttribute('data-visible',true);
+                    }
+                    else {
+                        navListe.setAttribute('data-visible',false);
+                    }
+                }}/>
+            </div>
+            <ul className="nav__liste" id="nav__liste" data-visible="false">
                 <li>
                     <Link to={`/`} className="nav__item nav__item-1">HOME</Link>
                 </li>

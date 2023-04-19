@@ -3,7 +3,6 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  box-sizing: border-box;
   font-family: 'Garet';
   
 }
@@ -68,3 +67,12 @@
   color: var(--color-secondary);
 }
 
+@media (max-width:768px) {
+  .btn{
+    width: 13rem;
+    height: 2rem;
+  }
+  h1{
+    margin: 0 0;
+  }
+}

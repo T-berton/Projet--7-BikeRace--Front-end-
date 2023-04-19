@@ -4,6 +4,8 @@ import Nav from "../Shared/Nav/Nav";
 import './slogan.css';
 import { ToastContainer, toast } from 'react-toastify';
 import '../../../node_modules/react-toastify/dist/ReactToastify.css';
+import SocialBar from "../Shared/SocialBar/SocialBar";
+
 
 
 function Slogan(){
@@ -76,24 +78,25 @@ function Slogan(){
                           <div className="form__name">
                             <div className="form__firstname">
                                   <label>First Name </label>
-                                  <input type="texte" value={firstname} onChange={handlefirstname}/>
+                                  <input type="text" value={firstname} onChange={handlefirstname} required/>
                             </div>
                             <div className="form__lastname">
                                   <label>Last Name </label>
-                                  <input type="texte" value={lastname} onChange={handlelastname}/>
+                                  <input type="text" value={lastname} onChange={handlelastname} required/>
                             </div> 
                           </div>
                             <div className="form__emailaddress">
                                   <label>Email Address </label>
-                                  <input type="texte" value={emailaddress} onChange={handleemailaddress}/>
+                                  <input type="email" value={emailaddress} onChange={handleemailaddress} required/>
                             </div>
                             <div className="form__slogan">
-                                  <label>Slogan Idea </label>
-                                  <textarea type="texte" value={slogan} maxLength={50} onChange={handleslogan} />
+                                  <label>Slogan Idea(50 characters)</label>
+                                  <textarea type="text" value={slogan} maxLength={50} onChange={handleslogan} required />
                             </div>
-                            <input type="submit" className="form__submit" onClick={handleSubmit}/>
+                            <input type="submit" className="form__submit"/>
                         </form>
                     </div>
+                <SocialBar/>
                 <Footer/>
             </>
     )
