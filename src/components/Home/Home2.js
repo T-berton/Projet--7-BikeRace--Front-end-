@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function Home2() {
-  const isMobile = useMediaQuery({ query: '(max-width: 426px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const slideImages = [cyclist1, cyclist2, cyclist3];
 
   return (

@@ -2,7 +2,6 @@
     background-color: var(--color-primary);
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 40vh auto;
     padding-top: 1rem;
 }
 .home2__header{
@@ -61,9 +60,10 @@
         grid-template-columns: 1fr;
     }
     .home2__header{
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding-left: 3rem;
         padding-right: 3rem;
+        flex-direction: column;
     }
     .home2__carousel{
         margin-top: 3rem;

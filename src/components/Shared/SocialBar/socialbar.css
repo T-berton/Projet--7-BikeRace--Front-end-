@@ -9,7 +9,7 @@
     bottom: 0;
     right: 0;
     transform: translate(-2rem, -1rem);
-    background-color: rgba(0, 0, 0, 0.3); /* Ajouter un fond noir semi-transparent */
+    background-color: rgba(0, 0, 0, 0.3); /* Ajoute un fond noir semi-transparent */
 }
 
 .social--light a:hover{
@@ -49,8 +49,7 @@ opacity: 0.5;
 @media (max-width:768px){
 
     .social{
-        transform: translate(-1rem, -1rem);
-
+        visibility: hidden ;
     }
 }
 

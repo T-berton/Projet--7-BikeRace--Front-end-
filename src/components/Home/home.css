@@ -72,6 +72,10 @@
     .home__header__subtitle h2 {
         font-size: 3rem;
     }
+    .home__background{
+        background-position: center;
+        flex-wrap: wrap;
+    }
     
 }
 
@@ -83,19 +87,18 @@
     .home__header__subtitle h2 {
         font-size: 2rem;
     }
-    .home__background{
-        background-size: auto;
-    }
-    
 }
 
-@media (max-width:476px) {
+@media (max-width:376px) {
     .home__header__title h1{
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
     .home__header__subtitle h2 {
         font-size: 1.5rem;
+    }
+    .home__background{
+        min-height: 80vh;
     }
     
 }

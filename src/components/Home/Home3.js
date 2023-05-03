@@ -31,7 +31,7 @@ function Home3(){
                         Rev up your creativity and race towards the prize by entering our slogan contest today!
                         </div>
                         <div className="home3__card__btn">
-                            <Link to={`/Sponsor`} className="btn btn-primary">CONTEST SLOGAN IDEA</Link>
+                            <Link to={`/Slogan`} className="btn btn-primary">CONTEST SLOGAN IDEA</Link>
                         </div>
                     </div>
                 </div>

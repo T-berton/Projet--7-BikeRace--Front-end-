@@ -26,17 +26,17 @@ function Nav (){
             </div>
             <ul className="nav__liste" id="nav__liste" data-visible="false">
                 <li>
-                    <Link to={`/`} className="nav__item nav__item-1">HOME</Link>
+                    <Link to={`/`} className={`${currentpath === '/' ? 'nav__item-underline nav__item nav__item-1' : 'nav__item nav__item-1'}`}>HOME</Link>
                 </li>
                 <li>
-                    <Link to={`/Gallery`} className="nav__item nav__item-1">GALLERY</Link>
+                    <Link to={`/Gallery`} className={`${currentpath === '/Gallery' ? 'nav__item-underline nav__item nav__item-1' : 'nav__item nav__item-1'}`}>GALLERY</Link>
                 </li>    
                 <span></span>
                 <li>
-                    <Link to={`/Slogan`} className="nav__item nav__item-2">SLOGAN</Link>
+                    <Link to={`/Slogan`} className={`${currentpath === '/Slogan' ? 'nav__item-underline nav__item nav__item-2' : 'nav__item nav__item-2'}`}>SLOGAN</Link>
                 </li>    
                 <li>
-                    <Link to={`/Location`} className="nav__item nav__item-2">LOCATION</Link>
+                    <Link to={`/Location`} className={`${currentpath === '/Location' ? 'nav__item-underline nav__item nav__item-2' : 'nav__item nav__item-2'}`}>LOCATION</Link>
                 </li>        
             </ul>    
         </nav>

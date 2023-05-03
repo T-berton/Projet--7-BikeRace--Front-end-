@@ -1,7 +1,6 @@
 .form__background{
     min-height: 100vh;
     background-color: var(--color-primary);
-    padding: 2rem 4rem;
     width: 100%;
 }
 

@@ -91,10 +91,6 @@
     .home3__title{
         font-size:2rem;
     }
-    
-}
-
-@media (max-width:376px) {
     .home3__card{
         width: 250px;
         height: 300px;
